@@ -7,7 +7,7 @@ This script uses Septa's open train hackathon data to parse the status of trains
 
 ### [TrainRouteInformation] 
 #### departureStation
-Enter your departure station ID below from the following options Station IDs can be found here:
+Enter your departure station ID, which can be found here:
 https://transitfeeds.com/p/septa/262/latest/stops
 example: Jefferson Station is '90006'
 
