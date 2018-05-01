@@ -13,23 +13,16 @@ example: Jefferson Station is '90006'
 
 #### boundDirection
 Train direction is either 'Northbound' or 'Southbound'
-The directions are not geographical references, but a reference to the old Reading and Pennsy Railroads. The key to understanding the
-direction is by using Suburban Station as a starting point: Any trains that that move eastbound towards
-Market East are all considered Northbound; trains going from Suburban to 30th St are all Southbound. The 'path' field describes more
-accurately the path of travel along the various branches.
+The directions are not geographical references, but a reference to the old Reading and Pennsy Railroads. The key to understanding the direction is by using Suburban Station as a starting point: Any trains that that move eastbound towards Market East are all considered Northbound; trains going from Suburban to 30th St are all Southbound. The 'path' field describes more accurately the path of travel along the various branches.
 
 #### trainDestination
-Enter the train line destination. This may not be the name of the stop you are, but is the final destination of that line.  Ensure
-that the destination station is correct for the line(s) you are interested in. You can enter multiple destinations by adding a comma
-(see example in config file). Here is a list of possible train destination stations:
-'Airport', 'Bryn Mawr''Chestnut H East', 'Chestnut H West', 'Cynwyd', 'Doylestown', 'Elwyn, ''Fox Chase', 'Glenside', 'Lansdale',
-'Marcus Hook', 'Malvern', 'Norristown', 'Newark', 'Norristown TC', 'Elwyn', 'Paoli', 'Suburban Station', 'Thorndale', 'Trenton',
-'Warminster', 'West Trenton', 'Wilmington'
+Enter the train line destination. This may not be the name of the stop you are, but is the final destination of that line. Ensure that the destination station is correct for the line(s) you are interested in. You can enter multiple destinations by adding a comma (see example in config file).
+Here is a list of possible train destination stations: 'Airport', 'Bryn Mawr', 'Chestnut H East', 'Chestnut H West', 'Cynwyd', 'Doylestown', 'Elwyn', 'Fox Chase', 'Glenside', 'Lansdale', 'Marcus Hook', 'Malvern', 'Norristown', 'Newark', 'Norristown TC', 'Elwyn', 'Paoli', 'Suburban Station', 'Thorndale', 'Trenton', 'Warminster', 'West Trenton', 'Wilmington'
 
 #### trainLineName
-Enter the name of the train line.  This will be used as the header of the train time image that is created.
+Enter the name of the train line. This will be used as the header of the train time image that is created.
 
 &nbsp;
 ### [TrueTypeFontFile] 
 #### ttf
-Enter the filepathe to the true type font file (TTF).  You can find TTFs online for most standard fonts for free.
+Enter the filepath to the true type font file (TTF). You can find TTFs online for most standard fonts for free.
