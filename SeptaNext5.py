@@ -201,7 +201,7 @@ for train in trainRoute:
 
 print('Saving board image...')
 draw = ImageDraw.Draw(img)
-img.save('C:/Users/paul.sesinkclee/Documents/Python_Scripts/Miscellaneous/septanext5.png')
+img.save('C:/Users/paul.sesinkclee/Documents/Python_Scripts/SeptaNext5/septanext5.png')
 
 # endregion
 
