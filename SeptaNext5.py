@@ -39,11 +39,11 @@ except:
 # declaring variables from config file
 try:
     print('Parsing config file and setting up parameters...')
-    departureStation = config['DepartureStation']['departureStation']
-    boundDirection = config['BoundDirection']['boundDirection']
-    trainDestination = config['TrainDestination']['trainDestination']
-    trainLineName = config['TrainLineName']['trainLineName']
-    TTF = config['TrueTypeFontFile']['TTFfile']
+    departureStation = config['TrainRouteInformation']['departureStation']
+    boundDirection = config['TrainRouteInformation']['boundDirection']
+    trainDestination = config['TrainRouteInformation']['trainDestination']
+    trainLineName = config['TrainRouteInformation']['trainLineName']
+    TTF = config['TrueTypeFontFile']['TTF']
 except:
     print('Config file cannot be read.')
     sys.exit(1)
