@@ -43,14 +43,14 @@ try:
     boundDirection = config['TrainRouteInformation']['boundDirection']
     trainDestination = config['TrainRouteInformation']['trainDestination']
     trainLineName = config['TrainRouteInformation']['trainLineName']
-    TTF = config['TrueTypeFontFile']['TTF']
+    ttf = config['TrueTypeFontFile']['TTF']
 except:
     print('Config file cannot be read.')
     sys.exit(1)
 
 # print train line text for top of board
 try:
-    font = ImageFont.truetype(TTF, 25)
+    font = ImageFont.truetype(ttf, 25)
     print('Font file accepted.')
 except:
     print('Font file incompatible.')
@@ -141,7 +141,7 @@ trainRoute = r.json()[key][0][boundDirection]
 # region parsing train data and printing on board image
 trainCounter = 0        # used to only pull data for 5 trains
 lineY = 70              # used to calculate position for each new row
-font = ImageFont.truetype(TTF, 23)
+font = ImageFont.truetype(ttf, 23)
 
 for train in trainRoute:
     if trainCounter < 5:
