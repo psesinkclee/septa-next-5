@@ -32,4 +32,4 @@ Enter the name of the train line.  This will be used as the header of the train 
 &nbsp;
 ### [TrueTypeFontFile] 
 #### ttf
-Enter the filepathe to the true type font file (TTF) below.  You can find TTFs online for most standard fonts for free.
+Enter the filepathe to the true type font file (TTF).  You can find TTFs online for most standard fonts for free.
