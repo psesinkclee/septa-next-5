@@ -135,7 +135,16 @@ except:
                 print('API is down.  Script terminated.')
                 sys.exit('API is down.  Script terminated.')
 
-trainRoute = r.json()[key][0][boundDirection]
+# checking boundDirection validity
+if boundDirection == 'Northbound':
+    jsonValue = 0
+elif boundDirection == 'Southbound':
+    jsonValue = 1
+else:
+    print('''boundDirection is neither 'Northbound' nor 'Southbound'. Correct the config file. ''')
+    sys.exit('boundDirection is invalid.  Script terminated')
+
+trainRoute = r.json()[key][jsonValue][boundDirection]
 # endregion
 
 # region parsing train data and printing on board image
@@ -201,7 +210,7 @@ for train in trainRoute:
 
 print('Saving board image...')
 draw = ImageDraw.Draw(img)
-img.save('C:/Users/paul.sesinkclee/Documents/Python_Scripts/SeptaNext5/septanext5.png')
+img.save(os.path.join(scriptDirectory, 'septanext5.png'))
 
 # endregion
 
