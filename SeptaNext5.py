@@ -187,10 +187,14 @@ for train in trainRoute:
             # print service type (blue if local, yellow if express)
             if train['service_type'] == 'LOCAL':
                 fill = (0, 255, 255)
+                draw.text(xy=(destinationX, lineY + 30), text='LOCAL', fill=fill, font=font)
             else:
                 fill = (255, 255, 0)
-
-            draw.text(xy=(destinationX, lineY + 30), text=train['service_type'], fill=fill, font=font)
+                if len(train['service_type']) > 19:     # checking that service type will fit and trimming if necessary
+                    serviceType = train['service_type'][:19]
+                else:
+                    serviceType = train['service_type']
+                draw.text(xy=(destinationX, lineY + 30), text=serviceType, fill=fill, font=font)
 
             # print track information (white)
             trackNum = train['track'] + train['platform']
